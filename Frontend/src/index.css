@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Nunito', sans-serif;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 12px;
+  background-color: rgb(234, 234, 234);
+  border-right: 1px solid rgb(168, 165, 165);
+  border-left: 1px solid rgb(168, 165, 165);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: grey;
+  border-radius: 10px;
+}
+
+.test {
+  display: flex;
+}
+
+.catalogs {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding-left: 10px;
+}
+
+.webkit {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+}
+
+.active .catalogs {
+  background-color: #defcec;
+}
+
+.catalogs:hover {
+  color: #00b252;
+  border-left: 4px solid green;
+  background: #defcec;
+}
+
+.catalogs:hover .svg {
+  fill: #00b252;
+}
+
+.catalogs:hover>p {
+  color: #00b252;
+}
+
+.sub-catalogs :hover {
+  border-left: 4px solid #00b252;
+  color: #00b252;
+  transition: all ease 0.6s;
+}
+
+.test:hover>p {
+  border-left: 4px solid #00b252;
+  color: #00b252;
+  transition: all ease 0.6s;
+}
+
+.test>.test2 {
+  display: none;
+  position: absolute;
+  margin-top: 40px;
+  padding: 8px;
+  transition: .3s step-end;
+  box-shadow: 0 17px 20px #ededed;
+  border-radius: 15px;
+}
+
+.btn {
+
+  color: #000;
+  border: 1px solid #D4D4D4;
+}
+
+.active2 {
+  border: 1px solid #292A2D;
+  background-color: red;
+}
+
+.sub-catalogs {
+  color: #000;
+  width: 100%;
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  text-align: start;
+  padding-left: 10px;
+}
+
+.sub-catalogs:hover {
+  background-color: #defcec;
+  color: #00b252;
+  border-left: 4px solid #00b252;
+}
+
+.test>.test2:hover {
+  background-color: #defcec;
+}
+
+.test:hover>.test2 {
+
+
+  display: block;
+  background-color: #fff;
+  z-index: 10000;
+}
